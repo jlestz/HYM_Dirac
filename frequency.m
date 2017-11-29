@@ -11,12 +11,12 @@
 
 function [fpeaks,Fs]=frequency(n,l,v,sfx,components,do_plot)
 
-if varIsEmpty(components) 
-    components = 5:8; 
+if nargin < 5 || isempty(do_plot) 
+    do_plot = 0;
 end 
 
-if varIsEmpty(do_plot) 
-    do_plot = 0; 
+if nargin < 4 || isempty(components) 
+    components = 5:7; 
 end 
 
 % set to 1 to interpolate for the fft 

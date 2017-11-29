@@ -4,12 +4,12 @@
 
 function styout = get_sty(var,col,sty)
 
-if ~varIsSet('col') 
-    col='kbrgcmy';
+if nargin < 3 || isempty(sty) 
+    sty={'-',':','--','-.'};
 end 
 
-if ~varIsSet('sty')
-    sty={'-',':','--','-.'};
+if nargin < 2 || isempty(sty) 
+    col='kbrgcmy';
 end 
 
 clen=length(col);
