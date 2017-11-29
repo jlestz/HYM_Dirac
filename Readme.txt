@@ -4,10 +4,10 @@ Jeff Lestz (jlestz@pppl.gov)
 
 --- Programs --- 
 
-analyze_mode 
+frequency
 get_equil
 getRunID
-psi_contours
+psiContours
 readGrid
 read_b0
 read_vector
@@ -22,5 +22,13 @@ cold - cold colormap
 C2xyz
 exercise_fft
 fix_cbar
+get_sty
 make_rbcmap
 maximize
+varIsSet
+
+--- Legacy --- 
+
+analyze_mode 
+get_equil_16 
+get_sty_nlv
